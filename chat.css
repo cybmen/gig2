@@ -1,0 +1,506 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;  
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+body {
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+.chat-wrapper {
+  width: 100%;
+  max-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+    152.36deg,
+    #fff1e6 0.79%,
+    #fde2e4 97.68%,
+    #fff1e6 97.68%
+  );
+}
+.left-menu {
+  width: 550px;
+  min-height: 100vh;
+  background-color: #e2ece9;
+}
+
+.left-menu h1 {
+  font-family: "Gilroy GEO HEAVY";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 127px;
+  /* identical to box height */
+  color: #fd6f34;
+  margin-left: 54px;
+  margin-top: 61px;
+}
+.left-menu p {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: capitalize;
+  color: #474747;
+  margin-left: 54px;
+}
+.header {
+  width: 90%;
+  border-radius: 0 49px 49px 0;
+  background: #f1f8f6;
+  box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.1);
+  padding: 25px 54px;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.menu-list {
+  width: 80% !important;
+  margin-left: 54px !important;
+  justify-content: center;
+}
+.menu-list li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 15px 0;
+  border-bottom: 1px solid #ffffff;
+}
+.menu-list li p {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #000000;
+  margin-left: 25px;
+}
+.icon-cont {
+  width: 61px;
+  height: 61px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ///// */
+.chat-main-wrapper {
+  min-height: 100px !important;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.chat-container {
+  width: 80%;
+  min-height: 100vh;
+  /* margin-top: 50px; */
+  background-image: url("./assets/bg-white-desktop.png");
+  border-radius: 0 19px 0px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.chat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: scroll;
+}
+.chat::-webkit-scrollbar {
+  display: none;
+}
+.chat-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 77px;
+}
+.chat-name {
+  font-family: "Gilroy GEO HEAVY";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.chat-header p {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+  margin-top: 10px;
+  width: 256px;
+}
+.input-cont {
+  width: 100%;
+  background-color: #ffff;
+  box-shadow: 0px 1px 21px #fad2e1;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 60px;
+}
+.input-cont input {
+  flex: 1;
+  height: 100%;
+  height: 75px;
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+}
+.input-text {
+  width: 60px;
+  height: 31px;
+  background: #bee1e6;
+  border-radius: 8px;
+  font-family: "Gilroy GEO HEAVY";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message,
+.user-message {
+  display: flex;
+  margin-top: 20px;
+}
+.user-image {
+  width: 40px;
+  height: 40px;
+}
+.message-text {
+  margin-left: 40px;
+  max-width: 70%;
+  word-break: break-all;
+  padding: 20px;
+  background: #fde2e4;
+  border-radius: 20px;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  word-break: normal;
+}
+.user-message-text {
+  margin-right: 40px;
+  word-break: break-all;
+  max-width: 70%;
+  padding: 20px;
+  background: #fde2e4;
+  border-radius: 20px;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  background: #fff1e6 !important;
+}
+.user-message {
+  margin-left: auto;
+  justify-content: right;
+  margin-top: 39px;
+  margin-bottom: 30px;
+}
+.gift-card {
+  display: flex;
+}
+.gift {
+  width: 379px;
+  background-color: #e2ece9;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 27px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.gift img {
+  border-radius: 19px;
+  width: 100%;
+  height: auto;
+}
+.gift h3 {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 17px;
+}
+.card-text {
+  font-family: "FiraGO";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #484848;
+  margin-top: 24px;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 24px;
+}
+.btns button {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #484848;
+  
+}
+
+.btns p span {
+  color: #5c5c5c;
+  font-weight: 700;
+}
+.load-cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.load-more {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  background: #bee1e6;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  padding: 10px;
+}
+
+.load-more a {
+  padding: 10px;
+}
+.reset {
+  font-family: "FiraGO";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  background: #ededed;
+  border-radius: 10px;
+  padding: 10px 17px;
+  border: 0;
+  outline: 0;
+  margin-left: 28px;
+}
+.reset a {
+  padding: 10px 30px;
+
+}
+@media all and (max-width: 986px) {
+  .left-menu {
+    display: none;
+  }
+  .chat-container {
+    width: 100%;
+    margin: 0 !important;
+  }
+}
+.gift button {
+  margin-left: 20px;
+  width: 112.61px;
+  height: 34px;
+  background-color: #fad2e1;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+}
+
+.gift button a {
+  padding: 10px 25px;
+}
+@media all and (max-width: 1536px) {
+  .left-menu {
+    width: 550px;
+    min-height: 100vh;
+    background-color: #e2ece9;
+  }
+
+  .left-menu h1 {
+    font-family: "Gilroy GEO HEAVY";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 137px;
+    /* identical to box height */
+    color: #fd6f34;
+  }
+  .left-menu p {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+  }
+  .header {
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .menu-list {
+    width: 416px;
+    margin-left: 20px;
+    justify-content: center;
+  }
+  .menu-list li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px 0;
+  }
+  .menu-list li p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .icon-cont {
+    width: 41px;
+    height: 45px;
+  }
+  .icon-cont img {
+    height: 20px;
+  }
+}
+
+@media all and (max-width: 1366px) {
+  .left-menu {
+    width: 450px;
+  }
+  .chat-container {
+    height: 100vh;
+  }
+  .chat-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17px;
+  }
+  .chat-header img {
+    width: 100px;
+  }
+  .left-menu h1 {
+    font-size: 80px;
+    line-height: 1;
+    margin-top: 10px;
+  }
+  .menu-list {
+    margin-top: 5px;
+  }
+  .left-menu p {
+    font-size: 25px;
+    margin-top: 5px;
+    padding-right: 30px;
+  }
+  .chat-container {
+    margin-top: 50px;
+  }
+  .header {
+    font-size: 17px;
+    margin: 10px 0;
+  }
+}
+
+@media all and (max-width: 572px) {
+  .gift {
+    width: 80%;
+  }
+  .chat-container {
+    padding: 15px;
+  }
+  .gift {
+    margin-left: 10px;
+  }
+  .message-text {
+    margin-left: 10px;
+  }
+  .user-message-text {
+    margin-right: 10px;
+  }
+  .input-cont {
+    margin-bottom: 60px;
+  }
+  .input-cont input {
+  height: 60px;
+  }
+  .gift button a {
+    padding: 10px;
+  }
+
+}
+
+
+
+
+@media all and (max-width: 400px) {
+
+  .input-cont {
+    margin-bottom: calc(0% + 50px);
+    
+  }
+  .input-cont input {
+  height: 60px;
+  }
+
+
+}

@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./assets/bg-main.png");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+.hello-container {
+  width: 100%;
+  max-width: 600px;
+  height: 100vh;
+  background-color: #fff;
+  border-radius: 0 19px 19px 0;
+  background-image: url("./assets/bg-white.png");  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hello-content {
+  width: 500px;
+  
+}
+.hello-content h1 {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 77px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #000000;
+}
+.hello-content p {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.8);
+  margin: 95px 0;
+}
+.hello-content button {
+  width: 445px;
+  height: 185px;
+  background: linear-gradient(
+    86.51deg,
+    #a2f9fb 0%,
+    #40b3c5 44.48%,
+    #2e2232 99.3%
+  );
+  border: 0;
+  outline: 0;
+  border-radius: 15px;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 85px;
+  line-height: 102px;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.hello-content button a {
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media all and (max-width: 552px) {
+  body {
+    background-image: url("./assets/bg-mobile.png");
+    background-size: cover;
+    background-position: center;
+    max-height: 100vh;
+  }
+  .hello-container {
+    align-items: flex-start;
+  }
+  .hello-content {
+    margin: 100px 10px;
+  }
+  .hello-container {
+    background-image: none;
+    background-color: transparent;
+  }
+  .hello-content button {
+    width: 216px;
+    height: 86px;
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    /* identical to box height */
+    text-align: center;
+    color: #ffffff;
+  }
+  .hello-content h1 {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .hello-content p {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 30px 0;
+    width: 282px;
+  }
+  .hello-container {
+    width: 100% !important;
+    max-width: 100%;
+  }
+  .hello-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
