@@ -305,6 +305,7 @@ body {
 .load-cont {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 50px;
 }
@@ -321,11 +322,15 @@ body {
   border: 0;
   outline: 0;
   padding: 10px;
+  margin-right: 20px;
 }
 
 .load-more a {
   padding: 10px;
+
 }
+
+
 .reset {
   font-family: "FiraGO";
   font-style: normal;
@@ -338,7 +343,6 @@ body {
   padding: 10px 17px;
   border: 0;
   outline: 0;
-  margin-left: 28px;
 }
 .reset a {
   padding: 10px 30px;
@@ -530,6 +534,12 @@ body {
   }
   .gift button a {
     padding: 10px;
+  }
+
+  .load-cont button {
+  margin: 5px;
+
+
   }
 
 }
