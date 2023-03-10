@@ -41,7 +41,7 @@ var body = document.querySelector('body'),
     throttle = 0.7; // 0-1
 
 (function draw() {
-  if(i <= 60) {
+  if(i <= 81) {
     var r = Math.random();
     
     requestAnimationFrame(draw);  

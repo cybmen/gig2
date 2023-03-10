@@ -251,6 +251,7 @@ body {
 
 .message-progress{
   display: flex;
+  justify-content: space-between;
   width: 400px;
   align-items: center;
   margin-top: 20px;
@@ -521,8 +522,7 @@ body {
 .gift button a {
   display: block;
   width: 100%;
-
-
+  padding: 10px;
 
 }
 @media all and (max-width: 1920px) {
@@ -727,6 +727,12 @@ body {
   .input-cont input {
     height: 60px;
   }
+
+  .progress-card {
+    display: flex;
+    width: 95%;
+  
+  }
 }
 
 @media all and (max-width: 340px) {
@@ -736,6 +742,12 @@ body {
 
   .body {
     min-height: 100%;
+  }
+
+  .progress-card {
+    display: flex;
+    width: 95%;
+  
   }
 }
 
