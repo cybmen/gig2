@@ -3,6 +3,11 @@
   src: url('./assets/font/Gilroy-Heavy.ttf') format('woff2');
 }
 
+@font-face {
+  font-family: 'FiraGO';
+  src: url('./assets/font/FiraGO-Regular.ttf') format('woff2');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -402,6 +407,15 @@ body {
 .reset a {
   width: 100%;
   padding: 10px 30px;
+  font-family: "FiraGO";
+
+}
+
+.reset:hover {
+  cursor: pointer;
+  background: #e4e1e1;
+  transition: 1s;
+
 }
 
 
