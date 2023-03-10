@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/font/Gilroy-Heavy.ttf') format('woff2');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +43,7 @@ body {
 }
 
 .left-menu h1 {
-  font-family: "Gilroy GEO HEAVY";
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 900;
   font-size: 100px;
@@ -142,8 +147,8 @@ body {
 
 .chat::-webkit-scrollbar {
   width: 15px;
-  border-radius: 20px;
-  background: #ECECEC;
+  border-top-right-radius: 80px 80px;
+    background: #ECECEC;
 }
 
 .chat::-webkit-scrollbar-track {
@@ -166,7 +171,7 @@ body {
   margin-top: 77px;
 }
 .chat-name {
-  font-family: "Gilroy GEO HEAVY";
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
@@ -215,7 +220,7 @@ body {
   height: 31px;
   background: #0B3954;
   border-radius: 8px;
-  font-family: "Gilroy GEO HEAVY";
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
@@ -238,6 +243,14 @@ body {
   display: flex;
   margin-top: 20px;
 }
+
+.message-progress{
+  display: flex;
+  width: 400px;
+  align-items: center;
+  margin-top: 20px;
+}
+
 .bot-img {
   width: 40px;
   height: 40px;
@@ -392,7 +405,59 @@ body {
 }
 
 
-@media all and (max-width: 986px) {
+
+
+
+
+
+
+.progressbar {
+  width: 379px;
+  background-color: #BFD7EA;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 27px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+
+.progress-card {
+  display: flex;
+  width: 300px;
+
+}
+
+.message-progress {
+  width: 320px;
+  margin-top: 0;
+}
+
+
+.progress-bar {
+  width: 200px;
+  border-radius: 30px;
+  height: 5px;
+  background-image: linear-gradient( to right, rgba(8, 126, 139, 1), rgba(191, 215, 234, 1) );
+  
+}
+
+
+.count {
+  text-align: center;
+  font-weight: 100;
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+  margin: 5px;
+}
+
+
+
+
+
+@media all and (max-width: 1115px) {
   .left-menu {
     display: none;
   }
@@ -416,7 +481,12 @@ body {
   box-shadow: 0px 1px 21px rgba(11, 57, 84, 0.3);
   border-radius: 10px;
   }
+
+
+
 }
+
+
 
 .gift button {
   width: 100%;
@@ -438,6 +508,8 @@ body {
   display: block;
   width: 100%;
 
+
+
 }
 @media all and (max-width: 1920px) {
   .left-menu h1 {
@@ -452,7 +524,7 @@ body {
   }
 
   .left-menu h1 {
-    font-family: "Gilroy GEO HEAVY";
+    font-family: "Gilroy";
     font-style: normal;
     font-weight: 900;
     font-size: 100px;
@@ -546,6 +618,33 @@ body {
     outline: 0;
     border-radius: 20px;
   }
+
+}
+
+@media all and (max-width: 1200px) {
+
+/* 
+  .progressbar {
+    width: 100%;
+    margin-left: 35px;
+  }
+
+
+.progress-card {
+  display: flex;
+  width: 100%;
+
+}
+
+.progress-bar {
+  width: 100%;
+}
+
+.message-progress {
+  width: 100%;
+  margin-top: 0;
+} */
+
 }
 
 @media all and (max-width: 572px) {
@@ -585,7 +684,30 @@ body {
   .load-cont button {
     margin: 5px;
   }
+
+  .progressbar {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+
+.progress-card {
+  display: flex;
+  width: 90%;
+
 }
+
+.progress-bar {
+  width: 100%;
+}
+
+.message-progress {
+  width: 100%;
+  margin-top: 0;
+}
+ 
+}
+
 
 @media all and (max-width: 400px) {
   .input-cont input {
@@ -602,3 +724,10 @@ body {
     min-height: 100%;
   }
 }
+
+
+
+
+
+
+
