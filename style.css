@@ -69,6 +69,8 @@ body {
   color: #ffffff;
   cursor: pointer;
   text-decoration: none;
+  display: block;
+  width: 100%;
 }
 
 @media all and (max-width: 552px) {
